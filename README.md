@@ -1,12 +1,17 @@
 # ETL-Telecom-Case-Study-SSIS
 
+Description:
+files contain the main transaction processes that the customers have completed
 
-The telecom company had specific requirements:
+Objectives:
 
-1-The pipeline ensures seamless handling of these files and moves them to the appropriate destination folder after processing.
+1-Pipeline: The SSIS package designed here manages the ingestion, processing, and transfer of transaction files to designated destination folders after the completion of processing.
 
-2-Input Data Types and Columns: The company provided a table that outlines the required data types and columns for the input data. This information is crucial for accurately mapping and transforming the data during the ETL process. Additionally, another table specified the necessary transformation and data-cleaning steps for the desired output.
+2-Input Data Schema and Columns: The company's provided schema details the requisite data types and column structure for incoming data. This schema is pivotal in accurately mapping and transforming data during the ETL (Extract, Transform, Load) process. Additionally, a transformation guide outlines the necessary steps for achieving the desired output.
 
-3-Rejected Records: To maintain data integrity, a dedicated table was created in the database to capture any rejected records during the data transformation phase. This allows for easy identification and resolution of data quality issues.
+3-Rejected Records Handling: Upholding data integrity, a dedicated database table captures rejected records encountered during the data transformation phase. This facilitates easy identification and resolution of data quality issues.
 
-4-Auditing: An auditing table was implemented to track essential information, such as the number of records successfully transformed • Number of records rejected • Linking the file name with the corresponding auditing information
+4-Auditing Mechanism: An auditing table has been incorporated to track vital information, including:
+  Successfully transformed records
+  Rejected record count
+  Association between file names and relevant auditing information for traceability and analysis.
